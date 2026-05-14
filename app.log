@@ -1,0 +1,19 @@
+2026-04-19 16:01:14,932 - INFO - User user1 created student Modasser
+2026-04-19 16:02:24,468 - WARNING - User admin1 deleted student 9
+2026-04-19 16:17:56,671 - INFO - User user1 created student M
+2026-04-19 16:18:07,145 - INFO - User user1 created student M
+2026-04-19 16:18:36,270 - INFO - User user1 created student New Student
+2026-04-19 16:19:52,010 - INFO - User user1 created student New Student
+2026-04-19 16:22:24,965 - WARNING - User admin1 deleted student 13
+2026-04-19 16:22:31,675 - WARNING - User admin1 deleted student 14
+2026-04-20 18:29:14,234 - INFO - User admin1 created student modzz
+2026-04-20 18:29:42,576 - INFO - User admin1 created student ahmed
+2026-04-20 18:45:31,820 - WARNING - User admin2 deleted student 1
+2026-04-20 18:45:32,710 - WARNING - User admin2 deleted student 2
+2026-04-20 18:45:42,738 - INFO - User admin2 created student modzz
+2026-04-20 21:13:24,801 - INFO - User admin1 created student waleed
+2026-04-20 21:41:32,937 - INFO - User admin1 created student nooh
+2026-04-20 21:54:17,616 - INFO - User admin2 created student Ahmed
+2026-04-24 19:28:03,811 - INFO - User admin2 created student modest
+2026-04-24 19:38:04,379 - INFO - User admin2 created student modzz
+2026-04-24 19:38:39,275 - INFO - User admin2 created student nooh
