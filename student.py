@@ -1,18 +1,17 @@
-from pydantic import BaseModel, Field
+from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy.orm import relationship
+from app.database import Base
 
-class StudentBase(BaseModel):
-    name: str
-    department: str
-    gpa: float = Field(..., ge=0, le=4)  # 👈 validation
+class Student(Base):
+    __tablename__ = "students"
 
-class StudentCreate(StudentBase):
-    pass
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String)
+    department = Column(String)
+    gpa = Column(Float)
 
-class StudentResponse(StudentBase):
-    id: int
+    user_id = Column(Integer, ForeignKey("users.id"))
 
-    class Config:
-        from_attributes = True
-        
-
-        
+    # relationship
+    user = relationship("User", back_populates="students")
+    

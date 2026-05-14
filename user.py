@@ -1,11 +1,15 @@
-from pydantic import BaseModel
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
+from app.database import Base
 
-class UserCreate(BaseModel):
-    username: str
-    email: str
-    password: str
+class User(Base):
+    __tablename__ = "users"
 
-class UserLogin(BaseModel):
-    username: str
-    password: str
-    
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True)
+    email = Column(String, unique=True, index=True)
+    password = Column(String)
+    role = Column(String)
+
+    # relationship
+    students = relationship("Student", back_populates="user")
